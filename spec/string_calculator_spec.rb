@@ -41,4 +41,12 @@ describe StringCalculator do
  	StringCalculator.new.add("5,5,5,5").should == 20
  end
 
+ it 'should return 50 for 5,5,5,5,10,10,10' do
+ 	StringCalculator.new.add("5,5,5,5,10,10,10").should == 50
+ end
+
+ it 'should return 100 for 10,5,5,5,5,5,5,30,30' do 
+ 	StringCalculator.new.add("10,5,5,5,5,5,5,30,30").should == 100
+ end
+
 end

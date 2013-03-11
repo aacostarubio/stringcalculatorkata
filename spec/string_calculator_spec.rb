@@ -49,4 +49,16 @@ describe StringCalculator do
  	StringCalculator.new.add("10,5,5,5,5,5,5,30,30").should == 100
  end
 
+ it 'should return 7 for 3\n4' do
+ 	StringCalculator.new.add("3\n4").should == 7
+ end
+
+ it 'should return 20 for 5\n5\n5\n5' do
+ 	StringCalculator.new.add("5\n5\n5\n5").should == 20
+ end
+
+ it 'should return 9 for 3\n3\n3' do
+ 	StringCalculator.new.add("3\n3\n3").should == 9
+ end
+
 end

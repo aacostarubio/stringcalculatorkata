@@ -25,4 +25,8 @@ describe StringCalculator do
   StringCalculator.new.add("9,12").should == 21
  end
 
+ it 'should return 15 for 1,2,3' do
+  StringCalculator.new.add("1,2,3").should == 6
+ end
+
 end

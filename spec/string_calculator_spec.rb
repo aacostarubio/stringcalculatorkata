@@ -13,4 +13,16 @@ describe StringCalculator do
  	StringCalculator.new.add("1,2").should == 3
  end
 
+ it 'should return 4 for 2,2' do
+ 	StringCalculator.new.add("2,2").should == 4
+ end
+
+ it 'should return 8 for 4,4' do
+ 	StringCalculator.new.add("4,4").should == 8
+ end
+
+ it 'should return 22' do
+  StringCalculator.new.add("9,12").should == 21
+ end
+
 end

@@ -65,4 +65,8 @@ describe StringCalculator do
  	StringCalculator.new.add("10\n5\n5,3,3,3\n1").should == 30
  end
 
+ it 'should return 200 for 35\n35\n10,3,3,1\n10,44\n6,4,4,2\n20\n10,1\n1\n1\n1\n1,1,1,1\n1\n1' do
+ 	StringCalculator.new.add("35\n35\n10,3,3,3,1\n10,44\n6,4,4,2\n20\n10,1\n1\n1\n1\n1,1,1,1\n1\n1").should == 200
+ end
+
 end

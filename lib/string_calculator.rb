@@ -9,7 +9,7 @@ class StringCalculator
   	numbers = stringing_numbers.map { |n| n.to_i}
   	return numbers.inject(:+)
   end
-
+  
   stringing_numbers = string.split(Regexp.union(delimeters))
   numbers = stringing_numbers.map { |n| n.to_i}
   numbers.inject(:+)

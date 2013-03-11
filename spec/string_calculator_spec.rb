@@ -61,4 +61,8 @@ describe StringCalculator do
  	StringCalculator.new.add("3\n3\n3").should == 9
  end
 
+ it 'should return 30 for 10\n5\n5,3,3,3\n1' do
+ 	StringCalculator.new.add("10\n5\n5,3,3,3\n1").should == 30
+ end
+
 end

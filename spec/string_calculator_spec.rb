@@ -37,4 +37,8 @@ describe StringCalculator do
  	StringCalculator.new.add("1,4,4").should == 9
  end
 
+ it 'should return 20 for 5,5,5,5' do
+ 	StringCalculator.new.add("5,5,5,5").should == 20
+ end
+
 end
